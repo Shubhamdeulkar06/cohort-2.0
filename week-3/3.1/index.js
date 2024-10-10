@@ -6,7 +6,7 @@ app.get("/health", (req, res) => {
   const username = req.headers.username;
   const password = req.headers.password;
   const kidneyId = req.query.kidneyId;
-// this is dum way of validation
+  // this is dum way of validation
   if (username != "shubham" || password != "pass") {
     res.status(400).json({
       msg: "somthings is wrong with your inputs",
